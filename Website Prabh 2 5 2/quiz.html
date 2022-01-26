@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profielen Quiz</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="stijl6.css" type="text/css" />
+<link rel="stylesheet" href="style5.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body onload="startTime()">
+
+    <div class="bg">
+    <div class="banner-text">
+        <a class="a1" href="Homepageprofielen.html"><img class="logo" src="download.png" alt="Logo"></a>
+        <ul>
+            <li><a href="Homepageprofielen.html">Home</a></li>
+            <li><a href="NTNG.html">NT/NG</a></li>
+            <li><a href="EMCM.html">EM/CM</a></li>
+            <li><a href="Studies.html">Studies</a></li>
+            <li><a href="Overzicht.html">Overzicht</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+
+        
+<h1>Quiz voor je profielkeuze</h1>
+    </div>
+  
+    <a name="ntstudies"></a>
+    <div class="livebackground7">
+<ul class="box-area">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</ul>
+    </div>
+
+ 
+
+
+  
+    <div class="flexbox">
+        <div class="search">
+          <div>
+            <input type="text" placeholder="Search . . ." required>
+            
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+          
+        <div class="toggle-btn1" onclick="this.classlist.toggle('active')">
+     
+            <h2 id="output">Je Resultaat...</h2>    
+            <button id="btn" onclick="toggle1();">Klik Hierop voor je resultaat!!</button>  
+               </div>
+              </div>
+            
+             <script>
+                 var clicked = false;
+                function toggle1(){
+                      if(!clicked){
+                          clicked = true;
+                          document.getElementById("btn").innerHTML= "Verder!!";
+                          document.getElementById("output").innerHTML = "Alles A: Profiel NG past bij jou  Alles B: Profiel NT past bij jou  Alles C: Profiel EM past bij jou  Alles D: Profiel CM past bij jou";
+                      }else{
+                        clicked = false;
+                        document.getElementById("btn").innerHTML = "Nog keer!!";
+                          document.getElementById("output").innerHTML = "Alles A of B: Profiel NT/NG past bij jou .................................................... Niks past bij jou: Ga naar VMBO";
+            
+            
+                      }
+                    
+          
+                
+                }
+             </script> 
+ 
+    <h1>Beste Quiz voor je Profiekeuze</h1>
+    
+    <form action="result.php" method="post" id="quiz">
+   
+               <ol>
+               
+                   <li>
+                   
+                       <h3>Wat doe je wanneer je iemand ziet bloeden?</h3>
+                       
+                       <div>
+                           <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                           <label for="question-1-answers-A">A) Wond steraliseren</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                           <label for="question-1-answers-B">B) 112 bellen</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                           <label for="question-1-answers-C">C) Weglopen</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                           <label for="question-1-answers-D">D) Foto maken</label>
+                       </div>
+                   
+                   </li>
+                   
+    
+                   <li>
+                    <img class="pijl" src="pijl.png" alt="Foto van profielen">
+                       <h3>Hoe ervaar jij wiskunde?</h3>
+                       
+                       <div>
+                           <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                           <label for="question-2-answers-A">A) Saai en landurig</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                           <label for="question-2-answers-B">B) Als een hemel op aard</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+                           <label for="question-2-answers-C">C) Interessant, maar er zijn leukere dingen </label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+                           <label for="question-2-answers-D">D) Motiverend om klappen uit te delen</label>
+                       </div>
+                   
+                   </li>
+                   
+                   <li>
+                   
+                       <h3>Wat vind je van kunst</h3>
+                       
+                       <div>
+                           <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+                           <label for="question-3-answers-A">A) Onnodig</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+                           <label for="question-3-answers-B">B) Afschuwelijk</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+                           <label for="question-3-answers-C">C) Belangrijk, maar niks voor mij</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+                           <label for="question-3-answers-D">D) Interessant</label>
+                       </div>
+                   
+                   </li>
+                   
+                   <li>
+                   
+                       <h3>Wat vind je van risico's nemen</h3>
+                       
+                       <div>
+                           <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+                           <label for="question-4-answers-A">A) Spannend, maar nodig</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+                           <label for="question-4-answers-B">B) Ik kies liever het zekere</label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+                           <label for="question-4-answers-C">C) Ik neem graag risico's </label>
+                       </div>
+                       
+                       <div>
+                           <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+                           <label for="question-4-answers-D">D) Ik ben er bang voor</label>
+                       </div>
+                   
+                   </li>
+                   
+                  
+               </ol>
+               
+              
+    
+    </form>
+    
+    </div>
+    <section class="footer8">
+        <div class="social8">
+    
+            <a href="https://www.instagram.com/hofstadlyceum/"><i class="fab fa-instagram"></i></a>
+            <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/HofstadLyceum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/hofstadlyceum/"><i class="fab fa-facebook"></i></a>
+    
+        </div>
+    
+        <ul class="list">
+    
+            <li><a href="Homepageprofielen.html">Home</a></li>
+            <li><a href="https://support.google.com/googleplay/answer/9037938?hl=nl">Services</a></li>
+            <li><a href="https://www.hofstadlyceum.nl/">About</a></li>
+            <li><a href="https://policies.google.com/terms?hl=en-US">Terms</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            
+    
+        </ul>
+        <p class="copyright">
+            Prabh & Antonie © 2022
+        </p>
+        <div id="txt"></div>
+
+            <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+    </section>
+  
+
+
+</body>
+</html>

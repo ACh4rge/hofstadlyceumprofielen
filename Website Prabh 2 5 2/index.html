@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alles over profielen</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="stijl6.css" type="text/css" />
+<link rel="stylesheet" href="style5.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload="startTime()">
+
+<div class="bg"></div>
+    <div class="banner-text">
+<a href="Homepageprofielen.html" class="a1"><img class="logo" src="download.png" alt="Logo"></a>
+<ul>
+    <li><a href="Homepageprofielen.html">Home</a></li>
+    <li><a href="NTNG.html">NT/NG</a></li>
+    <li><a href="EMCM.html">EM/CM</a></li>
+    <li><a href="Studies.html">Studies</a></li>
+    <li><a href="Overzicht.html">Overzicht</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+</ul>
+<h1>Profielen</h1>
+    </div>
+
+
+    <div class="livebackground">
+<ul class="box-area">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</ul>
+    </div>
+
+ 
+
+
+    <div class="container">
+    </div>
+    <div class="flexbox">
+        <div class="search">
+          <div>
+            <input type="text" placeholder="Zoek hier..." required>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="watzijnprofielen">
+                <h4 >Wat zijn profielen?</h4>
+                <p>In het derde jaar van havo en vwo kiezen leerlingen een profiel.<br>
+                Er zijn vier verschillende profielen, maar ook combinaties
+                 zijn mogelijk. Een vervolgopleiding vraagt soms een bepaald <br>
+                 vak of profiel. Belangrijk om daar bij de profielkeuze rekening 
+                 mee te houden. Er is keuze uit vier verschillende profielen.<br>
+                  Daarnaast wordt een keuze gemaakt voor één of twee profielkeuze-<br>
+                  vakken. Elke middelbare school biedt alle vier de profielen aan</p>
+                  <img class="foto1" src="Profielen-havo-vwo.jpg" alt="Foto van profielen">
+           
+        </div>
+               
+    <div>
+        <div class="welkeprofielen">
+<iframe class="foto2" src="https://www.youtube.com/embed/CIPO1yyD4n8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                    <h4>Welke profielen zijn er?</h4>
+                    <ul >
+                   <li> Natuur en Techniek </li>
+                   <li> Natuur en Gezondheid </li>
+                    <li> Cultuur en Maatschappij</li>
+                        <li> Economie en Maatschappij</li>
+                    </ul>
+                
+                    
+          </div>
+
+        <a href="NTNG.html"><img class="ntfoto3" src="nt-1.png" alt="NT"></a>
+        <a href="NTNG.html"><img class="ngfoto3" src="ng-1.png" alt="NG"></a>
+        <a href="EMCM.html"><img class="emfoto3" src="em-1.png" alt="EM"></a>
+        <a href="EMCM.html"><img class="cmfoto3" src="cm.png" alt="CM"></a>     
+
+
+    </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+    <section class="footer">
+    <div class="social">
+
+        <a href="https://www.instagram.com/hofstadlyceum/"><i class="fab fa-instagram"></i></a>
+        <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fab fa-snapchat"></i></a>
+        <a href="https://twitter.com/HofstadLyceum?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/hofstadlyceum/"><i class="fab fa-facebook"></i></a>
+
+    </div>
+
+    <ul class="list">
+
+<li><a href="Homepageprofielen.html">Home</a></li>
+<li><a href="https://support.google.com/googleplay/answer/9037938?hl=nl">Services</a></li>
+<li><a href="https://www.hofstadlyceum.nl/">About</a></li>
+<li><a href="https://policies.google.com/terms?hl=en-US">Terms</a></li>
+<li><a href="privacy.html">Privacy policy</a></li>
+
+    </ul>
+    <p class="copyright">
+        Profielen by Prabh & Antonie © 2022
+    </p>
+    <div id="txt"></div>
+
+    
+
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+    
+    
+    </section>
+</body>
+</html>
